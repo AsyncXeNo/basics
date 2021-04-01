@@ -9,7 +9,6 @@ import './index.css';
 // always returns JSX
 
 function BookList () {
-<<<<<<< HEAD
   return (
     <section className='booklist'>
       <Book />
@@ -41,7 +40,6 @@ function Author () { return <h4>Dvorestsky</h4>; }
 // adding the BookList component in the root div
 
 ReactDOM.render(<BookList />, document.getElementById('root'));
-=======
   return (
     <section>
       <Book />
@@ -70,4 +68,3 @@ function Author () { return <h4>Dvorestsky</h4> }
 // adding the BookList component in the root div
 
 ReactDOM.render(<BookList />, document.getElementById('root'))
->>>>>>> fa00dc46151a584641e5337216f853b50bdc5786
