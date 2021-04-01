@@ -4,13 +4,32 @@ import ReactDOM from 'react-dom'
 // stateless functional component
 // always returns JSX
 
-function Greeting () {
+function BookList () {
   return (
-    <div>
-      <h1>hello world</h1>
-      <p>this is my meesage</p>
-    </div>
+    <section>
+      <Book />
+    </section>
   )
 }
 
-ReactDOM.render(<Greeting />, document.getElementById('root'))
+// components
+
+function Book () {
+  return <article>
+    <Image />
+    <Title />
+    <Author />
+  </article>
+}
+
+function Image () {
+  return <img src='https://images-na.ssl-images-amazon.com/images/I/41mgb2RWkRL._SX346_BO1,204,203,200_.jpg' alt=''></img>
+}
+
+function Title () { return <h1>Dvorestsky's Endgame Manual</h1> }
+
+function Author () { return <h4>Dvorestsky</h4> }
+
+// adding the BookList component in the root div
+
+ReactDOM.render(<BookList />, document.getElementById('root'))
